@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-font: "golos ui,", "averta cy", "pp neue montreal";
+    /* --nav-font:"golos ui"; */
+    --second-font: "Vouage";
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+nav {
+    width: 90%;
+    display: flex;
+    padding: 2em 0;
+    margin: 0 auto;
+}
+
+.nav__items {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav__items:nth-child(2) {
+    flex: 4;
+    justify-content: left;
+}
+
+.nav__items:last-child {
+    justify-content: right;
+    flex: 1;
+}
+
+.nav__items a,
+.nav__sign-up {
+    text-decoration: none;
+    color: black;
+    font-family: var(--nav-font);
+}
+
+.nav__lists a {
+    padding: 0 2em;
+}
+
+.main__section {
+    width: max-content;
+    margin: 20vh auto;
+}
+
+p {
+    font-family: var(--nav-font);
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: -1em;
+}
+
+h1 {
+    font-family: var(--nav-font);
+    font-size: 8vw;
+}
+
+.nav__logo {
+    font-family: var(--nav-font);
+    font-size: 40px;
+}
+
+.nav__items:not(:nth-child(1)) {
+    font-size: 20px;
+}
+
+footer {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.footer__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.footer__text:first-child {
+    justify-content: left;
+}
+
+.footer__text:last-child {
+    justify-content: right;
+}
+
+.footer__text a {
+    text-decoration: none;
+    padding: 0 2em;
+    color: black;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+.footer__text button {
+    all: unset;
+    background-color: black;
+    font-family: var(--nav-font);
+    font-size: 14px;
+    border-radius: 60px;
+    height: 72px;
+    width: max-content;
+    padding: 0 40px;
+    color: white;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 .5em;
+}
+
+/* -----trail----- */
